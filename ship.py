@@ -1,3 +1,12 @@
+#
+# ship.py
+# @author bulbasaur
+# @description : Ship class
+# @created Sun Apr 07 2019 19:26:28 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 09:07:43 GMT+0800 (中国标准时间)
+#
+
+
 import pygame
 
 class Ship():

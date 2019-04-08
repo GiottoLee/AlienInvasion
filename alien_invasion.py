@@ -1,3 +1,12 @@
+#
+# alien_invasion.py
+# @author Giotto Lee
+# @description : Main function
+# @created Sun Apr 07 2019 18:56:32 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 09:10:59 GMT+0800 (中国标准时间)
+#
+
+
 import sys
 import pygame
 import game_functions as gf
@@ -21,11 +30,5 @@ def run_game():
     while True:
         #监视键盘和鼠标事件
         gf.check_events()
-        #每次循环时都重绘屏幕
-        screen.fill(ai_settings.bg_color)
-        ship.blitme()
-
-        #让最近绘制的屏幕可见
-        pygame.display.flip()
-
+        gf.update_screen(ai_settings,screen,ship)
 run_game()

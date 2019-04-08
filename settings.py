@@ -1,3 +1,11 @@
+#
+# settings.py
+# @author bulbasaur
+# @description : Setting class
+# @created Sun Apr 07 2019 19:08:03 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 09:08:08 GMT+0800 (中国标准时间)
+#
+
 class Settings():
     '''存储《外星人入侵》的所有设置的类'''
 
