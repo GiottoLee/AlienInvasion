@@ -16,5 +16,6 @@
 - ### Add function of moving ship and update files related.
 - ### Modified the speed of ship flying.
 - ### Package theevent of keyboard.
+- ### Add function of firing.
 
 ----------------------------------------------------

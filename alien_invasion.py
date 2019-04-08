@@ -3,7 +3,7 @@
 # @author Giotto Lee
 # @description : Main function
 # @created Sun Apr 07 2019 18:56:32 GMT+0800 (中国标准时间)
-# @last-modified Mon Apr 08 2019 11:46:06 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 15:08:24 GMT+0800 (中国标准时间)
 #
 
 
@@ -35,6 +35,10 @@ def run_game():
         #监视键盘和鼠标事件
         gf.check_events(ai_settings,screen,ship,bullets)
         ship.update()
-        bullets.update()
+        
+        gf.update_bullets(bullets)
+        
+        print(len(bullets))
+        
         gf.update_screen(ai_settings,screen,ship,bullets)
 run_game()
