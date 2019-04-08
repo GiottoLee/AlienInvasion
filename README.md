@@ -15,5 +15,6 @@
 - ### Add game_functions.py and updata files related.
 - ### Add function of moving ship and update files related.
 - ### Modified the speed of ship flying.
+- ### Package theevent of keyboard.
 
 ----------------------------------------------------

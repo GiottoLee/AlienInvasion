@@ -3,7 +3,7 @@
 # @author bulbasaur
 # @description : Setting class
 # @created Sun Apr 07 2019 19:08:03 GMT+0800 (中国标准时间)
-# @last-modified Mon Apr 08 2019 09:45:46 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 10:49:43 GMT+0800 (中国标准时间)
 #
 
 class Settings():
@@ -18,3 +18,9 @@ class Settings():
 
         #飞船的设置
         self.ship_speed_factor = 1.5
+
+        #子弹设置
+        self.bullet_speed_factor = 1
+        self.bullet_width = 3
+        self.bullet_height = 15
+        self.bullet_color = 60,60,60
