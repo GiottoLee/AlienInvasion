@@ -3,7 +3,7 @@
 # @author bulbasaur
 # @description : Ship class
 # @created Sun Apr 07 2019 19:26:28 GMT+0800 (中国标准时间)
-# @last-modified Mon Apr 08 2019 09:07:43 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 09:33:40 GMT+0800 (中国标准时间)
 #
 
 
@@ -23,6 +23,17 @@ class Ship():
         #将每艘飞船放在屏幕底部中央
         self.rect.centerx = self.screen_rect.centerx
         self.rect.bottom = self.screen_rect.bottom
+
+        #移动标志
+        self.moving_right = False
+        self.moving_left = False
+
+    def update(self):
+        '''根据移动标志调整飞船的位置'''
+        if self.moving_right:
+               self.rect.centerx += 1
+        if self.moving_left:
+               self.rect.centerx -= 1
 
     def blitme(self):
         '''在指定位置绘制飞船'''

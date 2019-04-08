@@ -3,7 +3,7 @@
 # @author Giotto Lee
 # @description : Main function
 # @created Sun Apr 07 2019 18:56:32 GMT+0800 (中国标准时间)
-# @last-modified Mon Apr 08 2019 09:10:59 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 09:30:24 GMT+0800 (中国标准时间)
 #
 
 
@@ -29,6 +29,7 @@ def run_game():
     #开始游戏主循环
     while True:
         #监视键盘和鼠标事件
-        gf.check_events()
+        gf.check_events(ship)
+        ship.update()
         gf.update_screen(ai_settings,screen,ship)
 run_game()
