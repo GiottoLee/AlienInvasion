@@ -3,12 +3,26 @@
 # @author bulbasaur
 # @description : 打包简化程序
 # @created Mon Apr 08 2019 08:55:34 GMT+0800 (中国标准时间)
-# @last-modified Mon Apr 08 2019 09:35:51 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 10:44:50 GMT+0800 (中国标准时间)
 #
 
 
 import sys
 import pygame
+
+def check_keydown_events(event,ship):
+    '''响应按键'''
+    if event.key == pygame.K_RIGHT:
+        ship.moving_right = True
+    elif event.key == pygame.K_LEFT:
+        ship.moving_left = True
+
+def check_keyup_events(event,ship):
+    '''响应松开'''
+    if event.key == pygame.K_RIGHT:
+        ship.moving_right = False
+    if event.key == pygame.K_LEFT:
+        ship.moving_left = False
 
 def check_events(ship):
     '''相应按键和鼠标事件'''
@@ -18,16 +32,10 @@ def check_events(ship):
             sys.exit()
         
         elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_RIGHT:
-                ship.moving_right = True
-            elif event.key == pygame.K_LEFT:
-                ship.moving_left = True
+            check_keydown_events(event,ship)
 
         elif event.type == pygame.KEYUP:
-            if event.key == pygame.K_RIGHT:
-                ship.moving_right = False
-            if event.key == pygame.K_LEFT:
-                ship.moving_left = False
+            check_keyup_events(event,ship)
 
 def update_screen(ai_settings,screen,ship):
     '''更新屏幕上的图像，并且换到新屏幕'''
