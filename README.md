@@ -17,5 +17,8 @@
 - ### Modified the speed of ship flying.
 - ### Package theevent of keyboard.
 - ### Add function of firing.
+- ### Optimize the structure of code
+
+
 
 ----------------------------------------------------
