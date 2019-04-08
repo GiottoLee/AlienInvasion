@@ -3,7 +3,7 @@
 # @author Giotto Lee
 # @description : Main function
 # @created Sun Apr 07 2019 18:56:32 GMT+0800 (中国标准时间)
-# @last-modified Mon Apr 08 2019 09:30:24 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 09:54:28 GMT+0800 (中国标准时间)
 #
 
 
@@ -24,7 +24,7 @@ def run_game():
     bg_color = (230,230,230)
 
     #创建一艘飞船
-    ship = Ship(screen)
+    ship = Ship(ai_settings,screen)
 
     #开始游戏主循环
     while True:

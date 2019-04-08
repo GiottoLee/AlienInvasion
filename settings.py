@@ -3,7 +3,7 @@
 # @author bulbasaur
 # @description : Setting class
 # @created Sun Apr 07 2019 19:08:03 GMT+0800 (中国标准时间)
-# @last-modified Mon Apr 08 2019 09:08:08 GMT+0800 (中国标准时间)
+# @last-modified Mon Apr 08 2019 09:45:46 GMT+0800 (中国标准时间)
 #
 
 class Settings():
@@ -15,3 +15,6 @@ class Settings():
         self.screen_width = 1200
         self.screen_height = 800
         self.bg_color = (230,230,230)
+
+        #飞船的设置
+        self.ship_speed_factor = 1.5
